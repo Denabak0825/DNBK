@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den Rest Motel</title>
+    <style>
+        /* 复古风格基础样式 */
+        body {
+            background-color: #f5f1e6;
+            color: #2c2416;
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 3px double #8b4513;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 5px 5px 0 #d4c7b0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #8b4513;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: #8b4513;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .info-section {
+            flex: 1 1 300px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .upload-section {
+            flex: 1 1 250px;
+            text-align: center;
+        }
+
+        .upload-box {
+            width: 220px;
+            height: 280px;
+            border: 2px dashed #888;
+            margin: 15px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            background-color: #f9f6f0;
+            cursor: pointer;
+        }
+
+        .upload-box input {
+            display: none;
+        }
+
+        .upload-label {
+            font-size: 14px;
+            color: #8b4513;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .caption {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .menu-section {
+            line-height: 1.8;
+        }
+
+        .menu-section h3 {
+            color: #8b4513;
+            margin-top: 20px;
+        }
+
+        .layout-section {
+            line-height: 1.8;
+        }
+
+        .services-section {
+            line-height: 1.8;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DEN REST</h1>
+        <p class="subtitle">Est. 1952 • Somewhere in the American West</p>
+
+        <nav>
+            <a href="#" onclick="showPage('home')">Home</a>
+            <a href="#" onclick="showPage('menu')">Menu</a>
+            <a href="#" onclick="showPage('layout')">Layout</a>
+            <a href="#" onclick="showPage('services')">What We Offer</a>
+            <a href="#" onclick="showPage('staff')">Staff</a>
+        </nav>
+
+        <!-- 主页面 -->
+        <div id="home" class="page active">
+            <div class="content-wrapper">
+                <div class="info-section">
+                    <p><strong>Hours of Operation:</strong> 6:00 a.m. – 10:00 p.m.</p>
+                    <p><strong>Reservation:</strong> We chat: @Denabak_Rest</p>
+                    <p><strong>Communal Kitchen (1st Floor):</strong>Extra fee: $2 per day.</p>
+                    <p><strong>Lights Out:</strong> 10:00 p.m. sharp. Kerosene lamps available for an extra 5¢ per hour.</p>
+                    <br>
+                    <p><strong>NO PET ALLOW</strong></p>
+                    <p><strong>NO SMOKING</strong></p>
+                </div>                
+                <div>
+        <a href="https://ibb.co/FLnfRYSc"><img src="https://i.ibb.co/ksMrNDRz/57c9d3c14677822bc93c63a9d6925b6f-1772089138264.png" alt="57c9d3c14677822bc93c63a9d6925b6f-1772089138264" border="0"></a>
+        <p class="caption">This is the boss, my dear wife.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 菜单页面 -->
+        <div id="menu" class="page">
+            <div class="menu-section">
+                <h2>Our Menu</h2>
+                <p>If you can meet, then you're lucky</p>
+                <h3>Appetizers</h3>
+                <p>• Salted Pork Rinds – 25¢</p>
+                <p>• Fried Eggs – 15¢ each</p>
+                <p>• Onion Soup – 35¢</p>
+
+                <h3>Main Courses</h3>
+                <p>• Beef Stew with Biscuits – 75¢</p>
+                <p>• Beans & Cornbread – 50¢</p>
+                <p>• Fried Groundhog – $1.00</p>
+
+                <h3>Desserts</h3>
+                <p>• Apple Pie Slice – 30¢</p>
+                <p>• Blueberry Mousse – 50¢ each</p>
+                <p>• Vanilla Pudding – 25¢</p>
+
+                <h3>Drinks</h3>
+                <p>• Coffee – 10¢</p>
+                <p>• Whiskey – 50¢ a shot</p>
+                <p>• Beer – 25¢ a bottle</p>
+                
+                <p><strong>Don't try to persuade the boss to share his food with you.</strong></p>
+            </div>
+        </div>
+
+        <!-- 旅店布局页面 -->
+        <div id="layout" class="page">
+            <div class="layout-section">
+                <h2>Motel Layout</h2>
+                <p><strong>1st Floor:</strong> Public area – kitchen, dining hall, and front desk. All guests are welcome here during operating hours.</p>
+                <p><strong>Don't go behind the reception desk</strong></p>
+                <p><strong>2nd Floor:</strong> Accommodation area – clean, simple rooms for miners and travelers. Each room has a cot, a washbasin, and a small stove.</p>
+                <p><strong>3rd Floor:</strong> The boss's private quarters. <strong>NO TRESPASSING.</strong> Violators will be dealt with promptly.</p>
+            </div>
+        </div>
+
+        <!-- 我们提供什么页面 -->
+        <div id="services" class="page">
+            <div class="services-section">
+                <h2>What We Offer</h2>
+                <p>• Clean, dry rooms with fresh straw mattresses.</p>
+                <p>• Heated stoves in every room.</p>
+                <p>• A fully stocked general store with all the necessities for prospectors and miners: picks, shovels, dynamite, canned goods, and more.As long as you can afford it, everything you want is here.</p>
+                <p>• A secure lock-up for your gear and gold dust.If lost,we will not compensate.</p>
+                <p>• Hot water for washing (extra charge applies).</p>
+            </div>
+        </div>
+
+        <!-- 优秀员工页面 -->
+        <div id="staff" class="page">
+            <div class="content-wrapper">
+                <div class="info-section">
+                    <h2>Excellent Staff</h2>
+                    <p>Whatever,Anyway, I'm the only one here.</p>
+                </div>
+                <div>
+        <a href="https://ibb.co/Tx41tPrf"><img src="https://i.ibb.co/4n82p4Jq/1772222309915.png" alt="1772222309915" border="0"></a>
+                    </div>
+                    <p class="caption">Of course,me.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Den Rest. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // 隐藏所有页面
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            // 显示选中的页面
+            document.getElementById(pageId).classList.add('active');
+        }
+
+        function previewImage(inputId, previewId) {
+            const input = document.getElementById(inputId);
+            const reader = new FileReader();
+            reader.onload = function() {
+                const output = document.querySelector(`#${inputId}`).parentElement;
+                output.innerHTML = `<img src="${reader.result}" style="max-width:100%; max-height:100%; object-fit:cover;">`;
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    </script>
+</body>
+</html>
